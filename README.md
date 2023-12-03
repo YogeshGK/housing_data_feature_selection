@@ -59,28 +59,41 @@ expressed in hundreds of thousands of dollars ($100,000).
 ## Lessons Learned
 
 ### why feature selection?
-    1. Reducing Dimensionality: By selecting the most       important features, we can reduce the number of dimensions in our dataset. This helps to avoid the curse of dimensionality,
-    2.Improving Model Interpretability: When a model relies on many features, it can be challenging to interpret its results. By selecting only the most important features, we can simplify our model and make it easier to understand.
-    3. Reducing Computational Complexity: Selecting the most important features can help reduce the amount of data which in turn speeds up the training and prediction processes
+    1. Reducing Dimensionality: By selecting the most important features,we can reduce the number of dimensions in our dataset. 
+        This helps to avoid the curse of dimensionality
+
+    2. Improving Model Interpretability: When a model relies on many features, it can be challenging to interpret its results.  By selecting only the most 
+        important features.We can simplify our model and make it easier to understand.
+
+    3. Reducing Computational Complexity: Selecting the most important features can help reduce the amount of data which in 
+        turn speeds up the training and prediction processes
     
 
 ### Important concepts in feature selection process
 
 # Filter based methods : 
 These are faster and computationally less expensive.
-       1. Mutual info regression: used for regression problem,  It works by measuring the dependency between each feature and the target variable. In our case, mutual information is calculated between each of above 10 listed features against the target variable,  median house value. 
-       2. SelectPercentile: This feature selection method is used to select a subset of features that have the highest scores according to a scoring function. In this project we used mutual_info_regression and f_regression as a scoring function. 
-       3.SelectKBest: This feature selection method is also used to select a subset of features that have the highest scores according to a scoring function, mutual_info_regression in this project.
+
+    1. Mutual info regression: used for regression problem,  It works by measuring the dependency between each feature and the target variable. 
+            In our case, mutual information is calculated between each of above 10 listed features against the target variable,  median house value. 
+
+    2. SelectPercentile: This feature selection method is used to select a subset of features that have the highest scores according to a scoring
+            function. In this project we used mutual_info_regression and f_regression as a scoring function. 
+
+    3. SelectKBest: This feature selection method is also used to select a subset of features that have the highest scores according to a scoring 
+            function, mutual_info_regression in this project.
 ![App Screenshot](./result/filter_based.png)
 
 # Wrapper based methods : 
-     Train a model on different subsets of features, and select the best one. This is computationally expensive operation.
+Train a model on different subsets of features, and select the best one. This is computationally expensive operation.
+
      1. Recurive Feature Elimination (RFS): start by training with all features and recusively remove one feature at a time. (Do you really read this? :)
-     2. Sequential Feature Selection (SFS): of selection starts with one feature, and in each subsequent step, one more feature is added. In comparision to the RFS, this offers simplicity and speed.
+     2. Sequential Feature Selection (SFS): selection starts with one feature, and in each subsequent step, one more feature is added.
+                             In comparision to the RFS, this offers simplicity and speed.
 ![App Screenshot](./result/wrapper_based.png)     
 
 ## Observations
-        Below are the R2 scores for each of the technique mentioned above. Though the result mostly similar, the techniques to derive those are pretty different from each other
+          Based on R2 scores for each of the technique mentioned above. Though the result mostly similar, the techniques to derive those are pretty different from each other.
 
 
 
