@@ -1,5 +1,5 @@
 <!-- ![plot](./result/cal_housing.jpeg) -->
-<img src="./result/cal_housing.jpeg" alt="California" height="350" width="700">
+<img src="./result/feature_sselection.png" alt="California" height="350" width="700">
 
 # California Housing Dataset Feature Selection Analysis
 
