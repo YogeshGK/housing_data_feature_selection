@@ -91,6 +91,7 @@ These are faster and computationally less expensive.
     2. Dropping highly correlated features : if 2 features have high correlation, here we try dropping one of them. 
     After measuring and plotting correlation, we can see 
     (AveBedrms and AveRooms) and (Latitude and Longitude), these both pairs are highly coreelated. We drop AveBedrms and Latitude, we received below result. 
+![App Screenshot](./result/correlation.png)
 ![App Screenshot](./result/drop_corelated.png)
 
 # Wrapper based methods : 
